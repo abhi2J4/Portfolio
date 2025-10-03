@@ -6,9 +6,9 @@ export const getUser = () => async (dispatch) => {
       type: "GET_USER_REQUEST",
     });
 
-    const API ="srv-d2dgu2ogjchc73dnt8j0";
+    
     // const { data } = await axios.get("/api/v1/user");  // error here
-const { data } = await axios.get(`${API}/api/v1/user`);
+const { data } = await axios.get(`/api/v1/user`);
 
     dispatch({
       type: "GET_USER_SUCCESS",

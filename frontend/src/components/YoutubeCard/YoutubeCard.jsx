@@ -13,12 +13,12 @@ const YoutubeCard = ({
   isAdmin = false,
   id,
 }) => {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-  // const deleteHandler = async (id) => {
-  //   await dispatch(deleteYoutube(id));
-  //   dispatch(getUser());
-  // };
+  const deleteHandler = async (id) => {
+    await dispatch(deleteYoutube(id));
+    dispatch(getUser());
+  };
 
   return (
     <div className="youtubeCard">
@@ -26,18 +26,18 @@ const YoutubeCard = ({
         <img src={image} alt="Video" />
         <Typography>{title}</Typography>
       </a>
-      {/* {isAdmin && (
-        // <Button
-        //   style={{
-        //     margin: "auto",
-        //     display: "block",
-        //     color: "rgba(40,40,40,0.7)",
-        //   }}
-        //   onClick={() => deleteHandler(id)}
-        // >
-        //   <FaTrash />
-        // </Button>
-      )} */}
+      {isAdmin && (
+        <Button
+          style={{
+            margin: "auto",
+            display: "block",
+            color: "rgba(40,40,40,0.7)",
+          }}
+          onClick={() => deleteHandler(id)}
+        >
+          <FaTrash />
+        </Button>
+      )}
     </div>
   );
 };

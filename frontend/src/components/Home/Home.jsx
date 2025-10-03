@@ -429,7 +429,7 @@ const Home = ({ timelines = [], youtubes = [], skills = {} }) => {
         <Typography variant="h3"> Project VIDEOS</Typography>
 
         <div className="homeYoutubeWrapper">
-          {youtubes.map((item) => (
+          {/* {youtubes.map((item) => (
             <YoutubeCard
               key={item._id}
               id={item._id}
@@ -437,11 +437,11 @@ const Home = ({ timelines = [], youtubes = [], skills = {} }) => {
               url={item.url}
               image={item?.image?.url || ""}
             />
-          ))}
-          {/* <YoutubeCard image="https://assets-static.invideo.io/images/large/Video_Portfolio_bcc5b0fba6.webp" title="sample video"/>
+          ))} */}
           <YoutubeCard image="https://assets-static.invideo.io/images/large/Video_Portfolio_bcc5b0fba6.webp" title="sample video"/>
           <YoutubeCard image="https://assets-static.invideo.io/images/large/Video_Portfolio_bcc5b0fba6.webp" title="sample video"/>
-          <YoutubeCard image="https://assets-static.invideo.io/images/large/Video_Portfolio_bcc5b0fba6.webp" title="sample video"/> */}
+          <YoutubeCard image="https://assets-static.invideo.io/images/large/Video_Portfolio_bcc5b0fba6.webp" title="sample video"/>
+          <YoutubeCard image="https://assets-static.invideo.io/images/large/Video_Portfolio_bcc5b0fba6.webp" title="sample video"/>
         </div>
       </div>
     </div>
