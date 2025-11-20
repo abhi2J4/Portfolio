@@ -360,10 +360,10 @@ const Home = ({ timelines = [], youtubes = [], skills = {} }) => {
         </Typography>
 
         <div className="homeCanvasBox">
+            <Typography variant="h2">FULL STACK DEVELOPER</Typography>
           <Typography variant="h2">DESIGNER</Typography>
-          <Typography variant="h2">DEVELOPER</Typography>
+          <Typography variant="h2">QUICK LEARNER</Typography>
           <Typography variant="h2"></Typography>
-          <Typography variant="h2">CONTENT CREATOR</Typography>
         </div>
 
         <Link to="/projects"  style={{
@@ -438,10 +438,11 @@ const Home = ({ timelines = [], youtubes = [], skills = {} }) => {
               image={item?.image?.url || ""}
             />
           ))} */}
-          <YoutubeCard image="https://assets-static.invideo.io/images/large/Video_Portfolio_bcc5b0fba6.webp" title="sample video"/>
-          <YoutubeCard image="https://assets-static.invideo.io/images/large/Video_Portfolio_bcc5b0fba6.webp" title="sample video"/>
-          <YoutubeCard image="https://assets-static.invideo.io/images/large/Video_Portfolio_bcc5b0fba6.webp" title="sample video"/>
-          <YoutubeCard image="https://assets-static.invideo.io/images/large/Video_Portfolio_bcc5b0fba6.webp" title="sample video"/>
+          <YoutubeCard image="https://drive.google.com/file/d/1cpP-di2_H6MK5Vr3nDsQHUdakZ3Hh3o8/view" title="sample video"/>
+          <YoutubeCard image="https://drive.google.com/file/d/1cpP-di2_H6MK5Vr3nDsQHUdakZ3Hh3o8/view" title="sample video"/>
+          <YoutubeCard image="https://drive.google.com/file/d/1cpP-di2_H6MK5Vr3nDsQHUdakZ3Hh3o8/view" title="sample video"/>
+          <YoutubeCard image="https://drive.google.com/file/d/1cpP-di2_H6MK5Vr3nDsQHUdakZ3Hh3o8/view" title="sample video"/>
+         
         </div>
       </div>
     </div>

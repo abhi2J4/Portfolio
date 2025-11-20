@@ -49,6 +49,8 @@
 import { Typography } from "@mui/material";
 import React from "react";
 import "./About.css";
+import aboutImage from "../../Images/WhatsApp Image 2025-11-20 at 10.24.03 PM.jpeg";
+
 
 const About = ({ about }) => {
   // Optional loading state if about data is not yet available
@@ -65,7 +67,7 @@ const About = ({ about }) => {
       <div className="aboutContainer2">
         <div>
           <img
-            src="https://avatars.githubusercontent.com/u/148936912?s=96&v=4"
+            src={aboutImage}
             // src={about?.avatar?.url || "/defaultAvatar.png"}
            
             alt={about?.name || "User"}
@@ -99,7 +101,7 @@ const About = ({ about }) => {
             }}
           >
             {/* {about?.description || "Describe yourself or your goals here."} */}
-            {about?.description || "I’m Abhishek Yadav, a passionate B.Tech CSE student and former Frontend Developer Intern at JSpark AI, Noida. My goal is to become a skilled full-stack developer and build impactful, user-friendly web applications using technologies like React, Node.js, and MongoDB."}
+            {about?.description || "I’m Abhishek Yadav, a passionate B.Tech CSE student and former Full Stack Developer Intern at JSpark AI, Noida. My goal is to become a skilled full-stack developer and build impactful, user-friendly web applications using technologies like React, Node.js, MongoDB, and more."}
           </Typography>
         </div>
       </div>

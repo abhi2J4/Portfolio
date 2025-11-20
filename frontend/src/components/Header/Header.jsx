@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactNavbar } from "overlay-navbar";
-import logo from "../../Images/logo.png";
+import logo from "../../Images/WhatsApp Image 2025-11-20 at 10.07344.05 PM.jpeg";
 import { FaUserAlt } from "react-icons/fa";
 
 const Header = () => {
@@ -10,7 +10,7 @@ const Header = () => {
       navColor2="hsl(219, 48%, 8%)"
       burgerColor="hsl(250, 100%, 75%)"
       burgerColorHover="hsl(250, 100%, 75%)"
-      logo={logo}
+      logo= {logo}
       logoWidth="250px"
       logoHoverColor="hsl(250, 100%, 75%)"
       nav2justifyContent="space-around"
