@@ -11,7 +11,7 @@ const Footer = () => {
       <div>
         <Typography variant="h5">About Me</Typography>
         <Typography>
-          Hey, my name is Abhishek Singh. I am a Full-Stack Developer.
+          Hey, my name is Abhishek Yadav. I am a Full-Stack Developer.
         </Typography>
 
         <Link to="/contact" className="footerContactBtn">

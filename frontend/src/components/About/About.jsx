@@ -82,7 +82,7 @@ const About = ({ about }) => {
             {about?.name || "Abhishek Yadav"}
           </Typography>
 
-          <Typography>{about?.title || "Full Stack Developer"}</Typography>
+          <Typography>{about?.title || "Full-Stack Developer"}</Typography>
 
           <Typography
             style={{ margin: "1vmax 0", textAlign: "center" }}
