@@ -360,10 +360,10 @@ const Home = ({ timelines = [], youtubes = [], skills = {} }) => {
         </Typography>
 
         <div className="homeCanvasBox">
-            <Typography variant="h3">FULL-STACK DEVELOPER</Typography>
-          <Typography variant="h3">DESIGNER</Typography>
-          <Typography variant="h3">QUICK LEARNER</Typography>
-          <Typography variant="h3"></Typography>
+            <Typography variant="h2">FULL-STACK DEVELOPER</Typography>
+          <Typography variant="h2">DESIGNER</Typography>
+          <Typography variant="h2">QUICK LEARNER</Typography>
+          <Typography variant="h2"></Typography>
         </div>
 
         <Link to="/projects"  style={{
