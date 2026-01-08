@@ -240,7 +240,7 @@ import {
   SiHtml5,
   SiThreedotjs,
   SiPython,
-  SiJava,
+
 } from "react-icons/si";
 import YoutubeCard from "../YoutubeCard/YoutubeCard";
 import { Link } from "react-router-dom";
@@ -364,10 +364,12 @@ const Home = ({ timelines = [], youtubes = [], skills = {} }) => {
           <p>K</p>
         </Typography>
 
+
         <div className="homeCanvasBox">
             <Typography variant="h2">FULL-STACK DEVELOPER</Typography>
           <Typography variant="h2">DESIGNER</Typography>
           <Typography variant="h2">QUICK LEARNER</Typography>
+          
           <Typography variant="h2"></Typography>
         </div>
 
@@ -459,7 +461,7 @@ const Home = ({ timelines = [], youtubes = [], skills = {} }) => {
 
 <YoutubeCard
   id="2"
-  url="https://drive.google.com/file/d/VIDEO_ID_2/view"
+  url="https://drive.google.com/file/d/1i3bzzK5hgr7LB6edt-oUXF_h7PZeg3at/view"
   image={porfolio}
   title="Portfolio Website"
   isAdmin={true}
@@ -467,7 +469,7 @@ const Home = ({ timelines = [], youtubes = [], skills = {} }) => {
 
 <YoutubeCard
   id="3"
-  url="https://drive.google.com/file/d/VIDEO_ID_3/view"
+  url="https://drive.google.com/file/d/1LkIvkW2T2OUYDXYr0vF1HA41sEys6LA_/view"
   image={ScreenShortFood}
   title="Food Delivery Website"
   isAdmin={true}
@@ -475,7 +477,7 @@ const Home = ({ timelines = [], youtubes = [], skills = {} }) => {
 
 <YoutubeCard
   id="4"
-  url="https://drive.google.com/file/d/VIDEO_ID_4/view"
+  url="https://drive.google.com/file/d/1djdWtXaR2kUtFU6kbJvg08yvAoygxmbS/view"
   image={Diabete_Prediction_AI}
   title="Diabete Prediction AI"
   isAdmin={true}

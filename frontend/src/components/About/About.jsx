@@ -94,14 +94,14 @@ const About = ({ about }) => {
         <div>
           <Typography
             style={{
-              wordSpacing: "5px",
-              lineHeight: "50px",
-              letterSpacing: "5px",
+              wordSpacing: "4px",
+              lineHeight: "40px",
+              letterSpacing: "2px",
               textAlign: "right",
             }}
           >
             {/* {about?.description || "Describe yourself or your goals here."} */}
-            {about?.description || "I’m Abhishek Yadav, a passionate B.Tech CSE student and former Full Stack Developer Intern at JSpark AI, Noida. My goal is to become a skilled full-stack developer and build impactful, user-friendly web applications using technologies like React, Node.js, MongoDB, and more."}
+            {about?.description || "I’m Abhishek Yadav, a passionate B.Tech CSE student and former Full Stack Developer Intern at JSpark AI, Noida. My goal is to become a skilled full-stack developer and build impactful, user-friendly web applications using modern technologies like React, Node.js, MongoDB, and more.I’m also actively exploring AI-powered application development, working with tools and frameworks such as LangChain and LlamaIndex ."}
           </Typography>
         </div>
       </div>
