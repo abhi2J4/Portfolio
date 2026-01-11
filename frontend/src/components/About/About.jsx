@@ -101,7 +101,7 @@ const About = ({ about }) => {
             }}
           >
             {/* {about?.description || "Describe yourself or your goals here."} */}
-            {about?.description || "I’m Abhishek Yadav, a passionate B.Tech CSE student and former Full Stack Developer Intern at JSpark AI, Noida. My goal is to become a skilled full-stack developer and build impactful, user-friendly web applications using modern technologies like React, Node.js, MongoDB, and more.I’m also actively exploring AI-powered application development, working with tools and frameworks such as LangChain and LlamaIndex ."}
+            {about?.description ||" I’m Abhishek Yadav, a B.Tech CSE student and former Full Stack Developer Intern at JSpark AI, Noida. I specialize in AI-powered application development using tools like LangChain and LlamaIndex, with a strong foundation in Java and full-stack development. My goal is to build impactful, user-friendly web applications using modern technologies such as React and MongoDB."}
           </Typography>
         </div>
       </div>
