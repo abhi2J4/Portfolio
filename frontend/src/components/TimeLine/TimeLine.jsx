@@ -66,15 +66,20 @@ const TimeLineWithData = () => {
       description: "Full Stack Developer Intern working on AI-driven web applications.",
     },
     {
-      date: "2025-01-08",
+      date: "2025-03-08",
       title: "Collaborative Project",
       description:
         "Built a real-time to-do board using MERN stack and WebSockets.",
     },
     {
-      date: "2025-9-9",
+      date: "2025-7-9",
       title: "Portfolio Launched",
       description: "Created and deployed a responsive personal portfolio.",
+    },
+    {
+      date: "2025-8-9",
+      title: "LangChain & LlamaIndex",
+      description: "Hands-on experience with LangChain and LlamaIndex to build intelligent workflows and RAG-based applications.",
     },
   ];
 
