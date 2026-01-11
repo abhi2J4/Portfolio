@@ -367,7 +367,7 @@ const Home = ({ timelines = [], youtubes = [], skills = {} }) => {
 
         <div className="homeCanvasBox">
             <Typography variant="h2">FULL-STACK DEVELOPER</Typography>
-          <Typography variant="h2">DESIGNER</Typography>
+          <Typography variant="h2">AI/LLM</Typography>
           <Typography variant="h2">QUICK LEARNER</Typography>
           
           <Typography variant="h2"></Typography>
