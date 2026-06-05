@@ -95,3 +95,39 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  /* ✅ Fix ADMIN PANEL heading - A getting cut off */
+  .loginForm > h4 {
+    letter-spacing: 3px;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: visible !important;
+    transform: translateX(0) !important;  /* ✅ stop slide-in clipping */
+    animation: none !important;           /* ✅ disable animation on mobile */
+    padding: 0 10px;
+    margin: 2vmax 0;
+  }
+
+  /* ✅ Fix container clipping the A */
+  .login {
+    overflow: hidden;
+  }
+
+  .loginContainer {
+    overflow: visible;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .loginForm {
+    overflow: visible;
+    height: auto;
+    padding: 2vmax 1vmax;
+  }
+
+  /* ✅ Fix input padding */
+  .loginForm > div {
+    padding: 2vmax 4vmax;
+  }
+}

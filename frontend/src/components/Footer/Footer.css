@@ -68,3 +68,25 @@
 .footerContactBtn:hover p {
   color: rgb(255, 255, 255);
 }
+
+@media screen and (max-width: 480px) {
+  .footer {
+    grid-template-columns: 1fr;  /* ✅ stack columns vertically */
+    padding: 4vmax 3vmax;
+  }
+
+  .footer > div > p {
+    width: 100%;  /* ✅ full width, no more narrow text */
+  }
+
+  .footer > div:last-child {
+    flex-direction: row;  /* ✅ social icons in a row */
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .footer > div > a {
+    font-size: 6vmax;  /* ✅ bigger icons on mobile */
+  }
+}

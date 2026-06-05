@@ -45,6 +45,91 @@
 // export default TimeLine;
 
 
+// import React from "react";
+// import Timeline from "@mui/lab/Timeline";
+// import TimelineItem from "@mui/lab/TimelineItem";
+// import TimelineSeparator from "@mui/lab/TimelineSeparator";
+// import TimelineConnector from "@mui/lab/TimelineConnector";
+// import TimelineContent from "@mui/lab/TimelineContent";
+// import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+// import TimelineDot from "@mui/lab/TimelineDot";
+// import { Event } from "@mui/icons-material";
+// import TimeLine from "./TimeLine.css";
+// import Typography from "@mui/material/Typography";
+
+// const TimeLineWithData = () => {
+//   // ✅ Hardcoded timeline JSON data
+//   const timelines = [
+//     {
+//       date: "2025-02-06 ",
+//       title: "Internship at JSpark AI",
+//       description: "Full Stack Developer Intern working on AI-driven web applications.",
+//     },
+//     {
+//   date: "2025-02-06 - Present",
+//   title: "Backend Development Journey",
+//   description:
+//     "Focused on learning Java, Spring Boot, REST APIs, MySQL, and Data Structures & Algorithms. Built backend projects, explored microservices concepts, and strengthened problem-solving skills through coding practice.",
+// },
+//     // {
+//     //   date: "2025-03-08",
+//     //   title: "Collaborative Project",
+//     //   description:
+//     //     "Built a real-time to-do board using MERN stack and WebSockets.",
+//     // },
+//     // {
+//     //   date: "2025-7-9",
+//     //   title: "Portfolio Launched",
+//     //   description: "Created and deployed a responsive personal portfolio.",
+//     // },
+//     // {
+//     //   date: "2025-8-9",
+//     //   title: "LangChain & LlamaIndex",
+//     //   description: "Hands-on experience with LangChain and LlamaIndex to build intelligent workflows and RAG-based applications.",
+//     // },
+
+//   ];
+
+//   return (
+//     <div className="background">
+//       <Typography className="background" variant="h4" align="center" gutterBottom>
+//         {/* My Timeline */}
+//       </Typography>
+//       <Timeline position="alternate">
+//         {timelines.map((item, index) => (
+//           <TimelineItem key={index}>
+//             <TimelineOppositeContent
+//               sx={{ m: "auto 0" }}
+//               align="right"
+//               variant="body2"
+//               color="text.secondary"
+//             >
+//               {new Date(item.date).toLocaleDateString()}
+//             </TimelineOppositeContent>
+
+//             <TimelineSeparator>
+//               <TimelineConnector />
+//               <TimelineDot>
+//                 <Event />
+//               </TimelineDot>
+//               <TimelineConnector />
+//             </TimelineSeparator>
+
+//             <TimelineContent sx={{ py: "12px", px: 2 }}>
+//               <Typography variant="h6" component="span">
+//                 {item.title}
+//               </Typography>
+//               <Typography>{item.description}</Typography>
+//             </TimelineContent>
+//           </TimelineItem>
+//         ))}
+//       </Timeline>
+//     </div>
+//   );
+// };
+
+// export default TimeLineWithData;
+
 import React from "react";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
@@ -54,51 +139,54 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import { Event } from "@mui/icons-material";
-import TimeLine from "./TimeLine.css";
+import "./TimeLine.css";
 import Typography from "@mui/material/Typography";
+import { useMediaQuery } from "@mui/material";
+
+// ✅ Fix: add this helper function
+const formatDate = (dateStr) => {
+  if (!dateStr) return "";
+  const trimmed = dateStr.trim();
+  // If it contains "Present" or any text, return as-is
+  if (isNaN(Date.parse(trimmed))) {
+    return trimmed;
+  }
+  return new Date(trimmed).toLocaleDateString();
+};
 
 const TimeLineWithData = () => {
-  // ✅ Hardcoded timeline JSON data
+  const isMobile = useMediaQuery("(max-width: 480px)");
+
   const timelines = [
     {
-      date: "2025-02-06 ",
+      date: "2025-02-06",
       title: "Internship at JSpark AI",
       description: "Full Stack Developer Intern working on AI-driven web applications.",
     },
     {
-      date: "2025-03-08",
-      title: "Collaborative Project",
+      date: "2025-02-06 - Present",  // ✅ now displays correctly
+      title: "Backend Development Journey",
       description:
-        "Built a real-time to-do board using MERN stack and WebSockets.",
-    },
-    {
-      date: "2025-7-9",
-      title: "Portfolio Launched",
-      description: "Created and deployed a responsive personal portfolio.",
-    },
-    {
-      date: "2025-8-9",
-      title: "LangChain & LlamaIndex",
-      description: "Hands-on experience with LangChain and LlamaIndex to build intelligent workflows and RAG-based applications.",
+        "Focused on learning Java, Spring Boot, REST APIs, MySQL, and Data Structures & Algorithms. Built backend projects, explored microservices concepts, and strengthened problem-solving skills through coding practice.",
     },
   ];
 
   return (
     <div className="background">
-      <Typography className="background" variant="h4" align="center" gutterBottom>
-        {/* My Timeline */}
-      </Typography>
-      <Timeline position="alternate">
+      <Timeline position={isMobile ? "right" : "alternate"}>
         {timelines.map((item, index) => (
           <TimelineItem key={index}>
-            <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
-              align="right"
-              variant="body2"
-              color="text.secondary"
-            >
-              {new Date(item.date).toLocaleDateString()}
-            </TimelineOppositeContent>
+
+            {!isMobile && (
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                align="right"
+                variant="body2"
+                color="text.secondary"
+              >
+                {formatDate(item.date)}  {/* ✅ use formatDate here */}
+              </TimelineOppositeContent>
+            )}
 
             <TimelineSeparator>
               <TimelineConnector />
@@ -109,11 +197,25 @@ const TimeLineWithData = () => {
             </TimelineSeparator>
 
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span">
+              <Typography
+                variant="h6"
+                component="span"
+                sx={{ fontSize: isMobile ? "0.9rem" : undefined }}
+              >
                 {item.title}
               </Typography>
-              <Typography>{item.description}</Typography>
+
+              {isMobile && (
+                <Typography variant="caption" display="block" color="text.secondary">
+                  {formatDate(item.date)}  {/* ✅ use formatDate here too */}
+                </Typography>
+              )}
+
+              <Typography sx={{ fontSize: isMobile ? "0.78rem" : undefined }}>
+                {item.description}
+              </Typography>
             </TimelineContent>
+
           </TimelineItem>
         ))}
       </Timeline>

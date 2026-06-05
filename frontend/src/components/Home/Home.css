@@ -299,3 +299,87 @@
 
 
 /*  */
+
+@media screen and (max-width: 400px) {
+  /* Canvas text - too large on 320px */
+  .homeCanvasContainer > h1 {
+    font: 700 6vmax "Josefin Sans", sans-serif;
+    padding: 1vmax;
+  }
+
+  /* Role text - too large */
+  .homeCanvasBox > h2 {
+    font: 900 1.4rem "Ubuntu Mono", "Roboto";
+    letter-spacing: 6px;
+    line-height: 45px;
+  }
+
+  /* VIEW WORK button - goes off screen */
+  .homeCanvasContainer > a {
+    font-size: 0.8rem;
+    padding: 2vmax 4vmax;
+    width: 80%;
+    text-align: center;
+    transform: translate(-50%, 0%);
+    bottom: 8%;
+    top: unset;
+  }
+
+  /* Skills section - too much padding */
+  .homeSkills {
+    padding: 100px 20px;
+    height: auto;
+    min-height: 1200px;
+  }
+
+  /* Skills cube - smaller */
+  .homeCubeSkills {
+    width: 80px;
+    height: 80px;
+  }
+
+  .homeCubeSkillsFace1 {
+    transform: translate3d(0, 0, 60px);
+  }
+  .homeCubeSkillsFace2 {
+    transform: rotateY(180deg) translate3d(0, 0, 60px);
+  }
+  .homeCubeSkillsFace3 {
+    transform: rotateY(-90deg) translate3d(0, 0, 60px);
+  }
+  .homeCubeSkillsFace4 {
+    transform: rotateY(90deg) translate3d(0, 0, 60px);
+  }
+  .homeCubeSkillsFace5 {
+    transform: rotateX(90deg) translate3d(0, 0, 60px);
+  }
+  .homeCubeSkillsFace6 {
+    transform: rotateX(-90deg) translate3d(0, 0, 60px);
+  }
+
+  /* Skills icons - too large */
+  .homeskillsBox > svg {
+    font-size: 7vmax;
+  }
+
+  /* Youtube section wrapper */
+  .homeYoutubeWrapper {
+    width: 100%;
+    padding: 1vmax;
+  }
+
+  /* Timeline section */
+  .homeContainer {
+    padding-top: 2vmax;
+    border-radius: 0 0 100px 100px;
+    border-bottom: 100px solid white;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 425px) {
+  .homeCanvasBox > h2 {
+    font: 900 1.4rem "Ubuntu Mono", "Roboto";
+    letter-spacing: 4px;  /* ✅ reduced from 22px */
+    line-height: 50px;
+  }
+}

@@ -130,3 +130,58 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 480px) {
+
+  /* ✅ Fix parent clipping */
+  .adminPanel {
+    overflow: hidden;
+  }
+
+  .adminPanelContainer {
+    overflow: visible;
+  }
+
+  /* ✅ Fix ADMIN PANEL heading - A getting cut off */
+  .adminPanelContainer > h4 {
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3vmax 1vmax;
+    overflow: visible !important;
+    transform: translateX(0) !important;
+    animation: none !important;
+    padding: 0 10px;
+  }
+
+  /* ✅ Fix inputs too wide */
+  .adminPanelInputs {
+    width: 90%;
+    padding: 2vmax;
+  }
+
+  /* ✅ Fix form padding */
+  .adminPanelContainer > form {
+    padding: 2vmax;
+  }
+
+  /* ✅ Fix skill rows */
+  .adminPanelSkill > div {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1vmax;
+  }
+
+  /* ✅ Fix about fieldset */
+  .adminPanelAbout > fieldset {
+    padding: 2vmax 1vmax;
+  }
+
+  /* ✅ Fix nav links */
+  .adminPanelContainer > form > a {
+    width: 180px;
+    font-size: 1.4rem;
+    padding: 1.5vmax;
+  }
+}
