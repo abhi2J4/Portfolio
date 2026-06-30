@@ -129,15 +129,9 @@ npm start
 
 👉 
 
----https://portfolio-1frontend.onrender.com/g
+---https://portfolio-1frontend.onrender.com/
 
-## 🔗 API Proxy
 
-Frontend is connected to backend using:
-
-```
-https://portfolio-1frontend.onrender.com/
-```
 
 ---
 
