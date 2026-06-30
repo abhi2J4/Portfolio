@@ -127,9 +127,9 @@ npm start
 
 ## 🌍 Live Demo
 
-👉 https://portfolio-6nht.onrender.com
+👉 
 
----
+---https://portfolio-1frontend.onrender.com/g
 
 ## 🔗 API Proxy
 
@@ -144,9 +144,9 @@ https://portfolio-1frontend.onrender.com/
 ## 📸 Screenshots
 #Home Page
 <p align="center">
-  <img src="./frontend/src/Images/home.png" width="45%" />
-  <img src="./frontend/src/Images/portfolio.png" width="45%" />
-  <img src="./frontend/src/Images/Admin.png" width="45%" />
+  <img src="./frontend/src/Images/home.png" width="60%" />
+  <img src="./frontend/src/Images/portfolio.png" width="60%" />
+  <img src="./frontend/src/Images/Admin.png" width="60%" />
 </p>
 
 
