@@ -136,14 +136,21 @@ npm start
 Frontend is connected to backend using:
 
 ```
-https://portfolio-6nht.onrender.com
+https://portfolio-1frontend.onrender.com/
 ```
 
 ---
 
 ## 📸 Screenshots
+#Home Page
+<p align="center">
+  <img src="./frontend/src/Images/home.png" width="45%" />
+  <img src="./frontend/src/Images/portfolio.png" width="45%" />
+  <img src="./frontend/src/Images/Admin.png" width="45%" />
+</p>
 
-(Add your project screenshots here)
+
+
 
 ---
 
@@ -173,11 +180,7 @@ Feel free to fork this repo and submit a pull request.
 
 ---
 
-## 📄 License
 
-This project is licensed under the ISC License.
-
----
 
 ## 👨‍💻 Author
 
