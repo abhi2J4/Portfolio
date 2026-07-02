@@ -89,9 +89,10 @@ import { Delete } from "@mui/icons-material";
 import { FaRegSmileWink } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 // import porfolio from "../../Images/portfolio.png";
-import portfolio  from "../../Images/portfolio.png"
+import portfolio from "../../Images/portfolio.png"
 import fooddevliverImage from "../../Images/Screenshot.png"
 import Diabete_Prediction_AI from "../../Images/Diabetes_Prediction_AI.png";
+import magicStreamImage from "../../Images/movie.png"
 
 // ProjectCard component
 export const ProjectCard = ({
@@ -141,6 +142,7 @@ export const ProjectCard = ({
 // Projects component with hardcoded data
 const Projects = () => {
   const projects = [
+
     {
       _id: "1",
       url: "https://github.com/abhi2J4/Diabetes_Predictor_",
@@ -171,6 +173,17 @@ const Projects = () => {
       description: "A responsive food delivery web application that enables users to browse restaurants, view menus, place orders, and make secure online payments, with reliable cloud-based deployment.",
       techStack: "Java, Spring Boot,Payment Gateway Integration,AWS,React, Bootstrap",
     },
+    {
+      _id: "4",
+      url: "https://github.com/abhi2J4/MagicStream_Movie",
+      image: {
+        url: magicStreamImage
+      },
+      title: "MagicStream – AI Movie Streaming Platform",
+      description: "A full-stack AI-powered movie streaming platform that allows users to browse movies, stream trailers, receive personalized AI recommendations, authenticate securely with JWT and HttpOnly cookies, filter movies by genre, and explore reviews through a responsive React interface backed by a scalable Go, Gin, and MongoDB architecture.",
+      techStack: "React, Vite, Bootstrap, Go, Gin, MongoDB, MongoDB Atlas, JWT Authentication, HttpOnly Cookies, OpenAI, LangChainGo, Vercel, Render"
+    },
+
 
     // {
     //   _id: "1",
@@ -208,9 +221,8 @@ const Projects = () => {
       <Typography variant="h3" className="buttonP" style={{ font: "100 1.2rem 'Ubuntu Mono'" }}>
         All The Projects Shown Above Are Made By Me <FaRegSmileWink />
       </Typography>
-    </div>  
+    </div>
   );
 };
 
 export default Projects;
-   
