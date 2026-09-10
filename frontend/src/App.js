@@ -98,6 +98,7 @@ import Timeline from "./components/Admin/Timeline";
 import Youtube from "./components/Admin/Youtube";
 import Project from "./components/Admin/Project";
 import Loader from "./components/Loader/Loader";
+import ChatBot from "./components/ChatBot/ChatBot";
 
 function App() {
   const dispatch = useDispatch();
@@ -154,6 +155,8 @@ function App() {
               element={isAuthenticated ? <Project /> : <Login />}
             />
           </Routes>
+
+          <ChatBot /> 
           <Footer />
         </>
       )}
